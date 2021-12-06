@@ -1,0 +1,145 @@
+.stake_mainDiv {
+  margin-top: 3rem;
+}
+
+.stake_divOne {
+  display: flex;
+  justify-content: space-between;
+}
+.stake_divTwo {
+  display: flex;
+  justify-content: space-between;
+  width: 961px;
+  margin: auto;
+}
+.stake_divArrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #26282b;
+  box-shadow: -2px -2px 6px #2f3136;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.stake_textStake {
+  font-size: 18px;
+  color: #d9d9d9;
+}
+
+/* cards css */
+
+.cards_mainDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1000px;
+  margin-top: 2rem;
+}
+.cardOne_stake {
+  height: 698px;
+  width: 470px;
+  border-radius: 10px;
+  box-shadow: -5px -12px 13px #2f3136;
+}
+.top_divCard {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.top_divLamp {
+  width: 74px;
+  height: 74px;
+  background: #26282b;
+  box-shadow: 3px 3px 5px #1b1c1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+.lamp_text {
+  color: #a8a8a8;
+  font-size: 26px;
+  font-weight: 600px;
+}
+.lamp_p {
+  font-size: 15px;
+  color: #dc3f10;
+}
+
+.stake_priceDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.aprStake {
+  color: #a8a8a8;
+  font-size: 21px;
+  margin-bottom: 1.2rem;
+}
+.aprPrice {
+  color: #dc3f10;
+  font-size: 21px;
+  margin-bottom: 1.2rem;
+}
+.Roco_mainDiv {
+  display: flex;
+
+  margin-top: 4rem;
+}
+.roco_marginDiv {
+  margin: 0px 2rem 0px 3.8rem;
+}
+.roco_text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #a8a8a8;
+}
+.orange_roco {
+  color: #dc3f10;
+}
+.claim_button {
+  width: 133px;
+  height: 62px;
+  border-radius: 4px;
+  box-shadow: -2px -2px 6px #2f3136;
+  color: #a8a8a8;
+  font-size: 18px;
+  font-family: 600;
+  background: #26282b;
+  border: 0px;
+}
+.claim_button:focus {
+  outline: 0px;
+}
+.contract_mainDiv {
+  margin-top: 4rem;
+}
+.stakes_button {
+  width: 201px;
+  height: 62px;
+  background: #cd2a12;
+  color: #dfdede;
+  font-size: 15px;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 6px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stakes_button:focus {
+  outline: 0px;
+}
+.view_contract {
+  color: #dc3f10;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+}

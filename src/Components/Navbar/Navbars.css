@@ -66,4 +66,7 @@
   .Navbar_searchDiv {
     width: 100%;
   }
+  .navbar-light .navbar-toggler:focus {
+    outline: 0px;
+  }
 }
