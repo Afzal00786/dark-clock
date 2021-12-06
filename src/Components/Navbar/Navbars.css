@@ -4,6 +4,8 @@
 }
 .Navbar_innerDiv {
   padding-top: 20px;
+  max-width: 90%;
+  margin: auto;
 }
 .Navbar_padding {
   padding: 0.5rem 0px;

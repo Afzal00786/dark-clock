@@ -7,7 +7,7 @@ function Navbars() {
     return (
         <>
             <div className="Navbar_main_Div">
-                <div className="container Navbar_innerDiv">
+                <div className="container-fluid Navbar_innerDiv">
                     <Navbar collapseOnSelect expand="lg" className="Navbar_padding">
 
                         <Navbar.Brand href="#home">
