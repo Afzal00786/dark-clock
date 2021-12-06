@@ -1,0 +1,69 @@
+.Navbar_main_Div {
+  background: #26282b;
+  height: 100vh;
+}
+.Navbar_innerDiv {
+  padding-top: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+.Navbar_padding {
+  padding: 0.5rem 0px;
+}
+.Navbar_logo {
+  height: 96px;
+  width: 93px;
+}
+.Navbar_searchDivMain {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.Navbar_searchDiv {
+  width: 390px;
+  height: 49px;
+  background: #26282b;
+  border-bottom: 4px;
+  box-shadow: -2px -2px 6px #2f3136;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.search_navbarImg {
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.search_navbarInput {
+  background: #26282b;
+  border: 0px;
+}
+.search_navbarInput:focus {
+  outline: 0px;
+  color: #dfdede;
+}
+.Navbar_walletButton {
+  width: 201px;
+  height: 62px;
+  background: #c82b13;
+  color: #dfdede;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 4px;
+}
+.Navbar_walletButton:focus {
+  outline: 0px;
+}
+.navbar-light .navbar-toggler {
+  background: #c82b13;
+}
+
+@media screen and (max-width: 991px) {
+  .Navbar_searchDivMain {
+    margin: 3rem 0px;
+  }
+  .Navbar_searchDiv {
+    width: 100%;
+  }
+}
