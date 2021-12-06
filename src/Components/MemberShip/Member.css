@@ -1,0 +1,47 @@
+.memberMain {
+  margin-top: 3rem;
+}
+
+.member_mainDiv {
+  width: 1047px;
+  margin: auto;
+}
+
+.name_memberShipDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow_div {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #26282b;
+  box-shadow: -2px -2px 6px #2f3136;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member_text {
+  font-size: 18px;
+  color: #d9d9d9;
+}
+.first_boxMember {
+  width: 1047px;
+  height: 194px;
+  box-shadow: -2px -2px 6px #2f3136;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_boxText {
+  font-size: 26px;
+  color: #a8a8a8;
+  margin-bottom: 0px;
+}
+.first_boxP {
+  color: 15px;
+  color: #dc3f10;
+}
