@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .dao-section{
+      height: 400px;
+      width: 100%;
+      background-color: aqua;
+  }
