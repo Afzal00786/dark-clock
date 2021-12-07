@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navbar, Nav } from "react-bootstrap"
 import "./Navbars.css"
 import logo from "../../Assets/logo.png"
 import seacrh from "../../Assets/seacrh.png"
+import checkred from "../../Assets/checkred.png"
+
 function Navbars() {
+    const [toggle, setToggle] = useState(true)
     return (
         <>
             <div className="Navbar_main_Div">
@@ -23,7 +26,27 @@ function Navbars() {
 
                                     </div>
                                 </div>
-                                <button className="Navbar_walletButton">Connect Wallet</button>
+                                <div>
+                                    {toggle ? <button className="Navbar_walletButton" onClick={() => { setToggle(!toggle) }}>Connect Wallet</button> :
+                                        <div className="number_div crs" onClick={() => { setToggle(!toggle) }}>
+                                            <h5 className="number_text">0x05698531.......60014536b</h5>
+                                            <div className="boxes_mainDiv">
+                                                <div className="">
+                                                    <div className="member_innerMarginNumber">
+                                                        <button className="checkBox_orangeDiv">
+
+                                                            <img src={checkred} />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
 
                             </Nav>
 
