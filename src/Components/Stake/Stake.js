@@ -5,7 +5,9 @@ import arrow_b from "../../Assets/arrow_b.png"
 import lamp from "../../Assets/lamp.png"
 import { Link } from "react-router-dom"
 import "./Stake.css"
+import { useNavigate } from 'react-router'
 function Stake() {
+    const history = useNavigate()
     return (
         <>
             <Navbars />
@@ -15,7 +17,9 @@ function Stake() {
 
                 <div className="stake_divOne">
                     <div className="stake_divTwo">
-                        <div className="stake_divArrow">
+                        <div className="stake_divArrow" onClick={() => {
+                            history(-1)
+                        }}>
                             <img src={arrow_b} />
                         </div>
                         <div className="stake_divStake">

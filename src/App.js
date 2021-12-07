@@ -21,6 +21,8 @@ import Launchpool from "./Components/Launchpool";
 function App() {
   return (
     <>
+      {/* <Navbars /> */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/userdashoard" element={<UserDashoard1 />} />
@@ -32,12 +34,15 @@ function App() {
         <Route path="/dao" element={<DAO />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/footer" element={<Footer />} />
+
+
         <Route path="/member" element={<Member />} />
         <Route path="/stake" element={<Stake />} />
         <Route path="/stake1" element={<Stake1 />} />
         {/* <Route path="/faq" element={<FAQ />} /> */}
       </Routes>
 
+      {/* <Footer /> */}
     </>
   );
 }
