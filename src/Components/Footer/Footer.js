@@ -12,7 +12,7 @@ function Footer() {
 
                 <div></div>
 
-                <div>
+                <div className="footer_textDivMargin">
                     <h3 className="footer_text">All Right reserved Hoopoe Ventures</h3>
                 </div>
 

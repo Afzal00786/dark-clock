@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Accordion } from "react-bootstrap";
-import "./FAQ.css";
+import "./faq.css";
 import Navbars from "../Navbar/Navbars";
 import arrow from "../../Assets/back_arrow.png";
 import QueMark from "../../Assets/Path 20697.png";

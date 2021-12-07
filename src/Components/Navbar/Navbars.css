@@ -46,7 +46,7 @@
 .Navbar_walletButton {
   width: 201px;
   height: 62px;
-  background: #c82b13;
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
   color: #dfdede;
   font-size: 15px;
   border: 0px;
@@ -56,13 +56,34 @@
   outline: 0px;
 }
 .navbar-light .navbar-toggler {
-  background: #c82b13;
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
 }
 
+.number_div {
+  display: flex;
+  align-items: center;
+}
+.number_text {
+  color: #a8a8a8;
+  font-size: 18px;
+  font-weight: 600;
+}
+.member_innerMarginNumber {
+  display: flex;
+  margin-left: 1rem;
+}
+.crs {
+  cursor: pointer;
+}
 @media screen and (max-width: 991px) {
   .Navbar_searchDivMain {
     margin: 3rem 0px;
   }
+  .navbar-light .navbar-toggler:focus {
+    outline: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
   .Navbar_searchDiv {
     width: 100%;
   }
