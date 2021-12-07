@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: #26282b; */
+}
+.container_wrapper {
+  max-width: 90%;
+  margin: auto;
+}
+.launchpool_card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lauchpool_card {
+  width: 389px;
+  height: 496px;
+  background-color: #26282b;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: -2px -2px 6px #2f3136;
+  padding: 50px 0px 0px 20px;
+}
+.luanchpool_img_section {
+  width: 791px;
+  height: 496px;
+  background-color: #26282b;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: -2px -2px 6px #2f3136;
+}
+.lauchpool_card_img {
+  height: 70px;
+  width: 70px;
+
+  background-color: #2f3136;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px #1b1c1d;
+}
+.launchpool_card_heading {
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  font-family: "open sans";
+}
+.launchpool_card_text {
+  font-size: 15px;
+  color: #dc3f10;
+  font-weight: 400;
+  font-family: "open sans";
+}
+.launchpool_card_text_wrapper {
+  padding: 20px 30px 20px 30px;
+}
+.name {
+  font-size: 21px;
+  font-family: "open sans";
+  color: white;
+  line-height: 28px;
+  padding-top: 20px;
+}
+.value {
+  font-size: 21px;
+  font-family: "open sans";
+  color: #dc3f10;
+  line-height: 28px;
+  padding-top: 20px;
+}
+.sub_fee {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  color: white;
+}
+.lauchpool_btn_wrapper {
+  padding: 20px 0px 0px 0px;
+}
+.launchpool_btn_text {
+  color: white;
+  font-size: 10px;
+}
+.click {
+  color: #dc3f10;
+}
+.lounchpool_card_btn {
+  height: 62px;
+  width: 201px;
+  background-color: #dc3f10;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+}
+.back_arrow {
+  height: 24px;
+  width: 24px;
+  background-color: #26282b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.partner {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "open sans";
+  color: white;
+}
+@media screen and (max-width: 1311px) {
+  .launchpool_card_wrapper {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 475px) {
+  .name {
+    font-size: 17px;
+    font-family: "open sans";
+    color: white;
+    line-height: 28px;
+    padding-top: 18px;
+  }
+  .value {
+    font-size: 17px;
+    font-family: "open sans";
+    color: #dc3f10;
+    line-height: 28px;
+    padding-top: 18px;
+  }
+  .lauchpool_card {
+    width: 100%;
+    height: 496px;
+    background-color: #26282b;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: -2px -2px 6px #2f3136;
+    padding: 50px 0px 0px 0px;
+  }
+}

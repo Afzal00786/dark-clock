@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: #26282b; */
+}
+.container_wrapper {
+  max-width: 90%;
+  margin: auto;
+}
+.dashoard_card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 864px) {
+  .dashoard_card_wrapper {
+    justify-content: center;
+  }
+}
+.dashoard_card {
+  width: 389px;
+  height: 273px;
+  background-color: #26282b;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: -2px -2px 6px #2f3136;
+  padding: 50px 10px 0px;
+}
+.dashboard_card_img {
+  height: 70px;
+  width: 70px;
+  box-shadow: 3px 3px 6px #1b1c1d;
+  background-color: #2f3136;
+  border-radius: 6px;
+}
+.dashboard_card_heading {
+  font-size: 26px;
+  font-family: "open sans";
+  font-weight: 600;
+  color: white;
+  line-height: 36px;
+}
+.dashboard_card_text {
+  font-size: 15px;
+  font-family: "open sans";
+
+  color: #dc3f10;
+  line-height: 20px;
+}
+.dashboard_card_subtext {
+  padding: 10px 0px 0px 10px;
+  color: white;
+  font-size: 16px;
+}
+.inner_text {
+  font-size: 19px;
+  color: #dc3f10;
+}
+.dashboard_card_btn {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 0px 0px;
+}
+.dashboard-btn {
+  height: 32px;
+  width: 106px;
+  background-color: #cd2a12;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+}
+.back_arrow {
+  height: 24px;
+  width: 24px;
+  background-color: #26282b;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #1b1c1d;
+}
+.membership {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "open sans";
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard_card_heading {
+    font-size: 22px;
+    font-family: "open sans";
+    font-weight: 600;
+    color: white;
+    line-height: 30px;
+  }
+  .dashboard_card_text {
+    font-size: 14px;
+    font-family: "open sans";
+
+    color: #dc3f10;
+    line-height: 20px;
+  }
+  .dashboard_card_subtext {
+    padding: 10px 0px 0px 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .inner_text {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 864px) {
+  .dashoard_card_wrapper {
+    justify-content: center;
+  }
+}

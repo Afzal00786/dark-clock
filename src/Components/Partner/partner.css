@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .partner_top_card {
   width: 389px;
   height: 218px;
@@ -50,6 +51,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media screen and (max-width: 864px) {
+  .partner_sub_card_wrapper {
+    justify-content: center;
+  }
 }
 .card_img {
   height: 70px;

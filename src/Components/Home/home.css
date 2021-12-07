@@ -26,6 +26,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .carousel-indicators {
   background: transparent;
 }
@@ -34,8 +35,9 @@
   height: 147px;
   background-color: #26282b;
   border-radius: 10px;
-  margin: 15px 15px 0px;
+  margin: 35px 15px 20px;
   cursor: pointer;
+
   box-shadow: -2px -2px 6px #2f3136;
 }
 .card_text {
@@ -59,4 +61,23 @@
 }
 .bg_chage {
   background-color: #cd2a12;
+}
+@media screen and (max-width: 904px) {
+  .home_page_card {
+    justify-content: center;
+  }
+  .card_text {
+    font-size: 18px;
+    color: white;
+    line-height: 36px;
+    font-family: "open sans";
+    font-weight: 600;
+  }
+  .card_subtext {
+    font-size: 14px;
+    color: white;
+    line-height: 24px;
+    font-family: "open sans";
+    font-weight: 600;
+  }
 }
