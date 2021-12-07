@@ -24,9 +24,11 @@
 .home_page_card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-
+.link_home:hover {
+  text-decoration: none;
+}
 .carousel-indicators {
   background: transparent;
 }

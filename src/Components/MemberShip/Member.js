@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useHistory } from 'react'
 import Footer from '../Footer/Footer'
 import Navbars from '../Navbar/Navbars'
 import arrow_b from "../../Assets/arrow_b.png"
 import checkred from "../../Assets/checkred.png"
 import checkgrey from "../../Assets/checkgrey.png"
+import { useNavigate } from "react-router-dom"
 
 import "./Member.css"
 function Member() {
+    const history = useNavigate()
     const [select, setSelect] = useState(true)
     const [select1, setSelect1] = useState(true)
     const [select2, setSelect2] = useState(true)
@@ -17,7 +19,9 @@ function Member() {
             <div className="memberMain">
                 <div className="member_mainDiv">
                     <div className="name_memberShipDiv">
-                        <div className="arrow_div">
+                        <div className="arrow_div" onClick={() => {
+                            history(-1)
+                        }}>
                             <img src={arrow_b} />
                         </div>
                         <div className="name_div">

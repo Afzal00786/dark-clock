@@ -2,7 +2,7 @@ import React from "react";
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom"
-import Home from './Components/Home/home';
+import Home from './Components/Home/Home';
 import Investment from './Components/Investment';
 import Partner from './Components/Partner';
 import Navbars from './Components/Navbar/Navbars';
@@ -18,6 +18,8 @@ import Launchpool from "./Components/Launchpool";
 function App() {
   return (
     <>
+      {/* <Navbars /> */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/userdashoard" element={<UserDashoard1 />} />
@@ -25,14 +27,15 @@ function App() {
         <Route path="/launchpool" element={<Launchpool />} />
         <Route path="/investment" element={<Investment />} />
         <Route path="/partner" element={<Partner />} />
-        <Route path="/navbar" element={<Navbars />} />
-        <Route path="/footer" element={<Footer />} />
+
+
         <Route path="/member" element={<Member />} />
         <Route path="/stake" element={<Stake />} />
         <Route path="/stake1" element={<Stake1 />} />
         {/* <Route path="/faq" element={<FAQ />} /> */}
       </Routes>
 
+      {/* <Footer /> */}
     </>
   );
 }

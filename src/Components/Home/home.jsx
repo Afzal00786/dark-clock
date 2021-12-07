@@ -9,7 +9,9 @@ import Invest from "../../Images/invest.png"
 import Partner from "../../Images/partners.png"
 import Dashbord from "../../Images/dashboard.png"
 import FAQ from "../../Images/faq.png"
-
+import { Link } from "react-router-dom"
+import Navbars from '../Navbar/Navbars'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     const [color, setColor] = useState("1");
@@ -20,49 +22,63 @@ const Home = () => {
             id: 1,
             text: "Membership",
             subText: "Be part of Hoopoe family",
-            img: MemberShipg
+            img: MemberShipg,
+            route: "/member"
         },
         {
             id: 2,
             text: "Launchpool",
             subText: "Invest promising projects",
-            img: Seed
+            img: Seed,
+            route: "/launchpool"
+
         },
         {
             id: 3,
             text: "Stake",
             subText: "Earn Passive income",
-            img: Stake
+            img: Stake,
+            route: "/stake"
+
         },
         {
             id: 4,
             text: "DAO",
             subText: "Vote for future",
-            img: Vote
+            img: Vote,
+            route: "membership"
+
         },
         {
             id: "5",
             text: "Investments",
             subText: "View our investments",
-            img: Invest
+            img: Invest,
+            route: "/investment"
+
         },
         {
             id: "6",
             text: "Partners",
             subText: "View our Ecosystem",
-            img: Partner
+            img: Partner,
+            route: "/partner"
+
         },
         {
             id: "7",
             text: "Dashboard",
             subText: "Follow your investments",
-            img: Dashbord
+            img: Dashbord, route: "/userdashoard"
+
         },
         {
             id: "8",
             text: "FAQ",
             subText: "Fraequently asked questions",
-            img: FAQ
+            img: FAQ,
+            route: "membership"
+
         },
 
     ]
@@ -71,6 +87,7 @@ const Home = () => {
 
     return (
         <>
+            <Navbars />
             <div style={{ backgroundColor: "#26282b" }}>
                 <div className="container_wrapper">
                     {/* <=======Banner Carousel==========> */}
@@ -105,15 +122,16 @@ const Home = () => {
                             homeCard.map((cardData) => {
                                 return (
                                     <>
-                                        <div className={color === cardData.id ? "d-flex justify-content-center align-items-center home_tab_wrapper bg_chage" : "d-flex justify-content-center align-items-center home_tab_wrapper "} onClick={() => {
-                                            setColor(cardData.id)
-                                        }}>
-                                            <div><img src={cardData.img} className="home_card_img" /></div>
-                                            <div className="ml-4" style={{ background: "transparent" }}><div className="card_text">{cardData.text}</div>
-                                                <div className="card_subtext">{cardData.subText}</div>
+                                        <Link className="link_home" to={cardData.route}>
+                                            <div className={color === cardData.id ? "d-flex justify-content-center align-items-center home_tab_wrapper bg_chage" : "d-flex justify-content-center align-items-center home_tab_wrapper "} onClick={() => {
+                                                setColor(cardData.id)
+                                            }}>
+                                                <div><img src={cardData.img} className="home_card_img" /></div>
+                                                <div className="ml-4" style={{ background: "transparent" }}><div className="card_text">{cardData.text}</div>
+                                                    <div className="card_subtext">{cardData.subText}</div>
+                                                </div>
                                             </div>
-                                        </div>
-
+                                        </Link>
                                     </>
                                 )
                             })
@@ -145,6 +163,7 @@ const Home = () => {
 
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

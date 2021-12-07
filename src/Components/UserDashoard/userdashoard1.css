@@ -11,7 +11,11 @@
 .dashoard_card_wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.content_wrapper {
+  max-width: 1300px;
+  margin: auto;
 }
 @media screen and (max-width: 864px) {
   .dashoard_card_wrapper {

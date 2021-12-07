@@ -11,7 +11,7 @@
 .partner_card_wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .partner_top_card {
@@ -46,6 +46,10 @@
   background-color: #26282b;
   border-radius: 10px;
   cursor: pointer;
+}
+.content_wrapper {
+  max-width: 1300px;
+  margin: auto;
 }
 .partner_sub_card_wrapper {
   display: flex;
