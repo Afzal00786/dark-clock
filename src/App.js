@@ -5,6 +5,10 @@ import { Routes, Route } from "react-router-dom"
 import Home from './Components/Home/home';
 import Navbars from './Components/Navbar/Navbars';
 import DAO from './Components/DAO/DAO';
+import FAQ from './Components/FAQ/FAQ';
+import Footer from './Components/Footer/Footer';
+import Member from './Components/MemberShip/Member';
+
 
 function App() {
   return (
@@ -13,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/navbar" element={<Navbars />} />
         <Route path="/dao" element={<DAO />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/member" element={<Member />} />
       </Routes>
 
     </>
