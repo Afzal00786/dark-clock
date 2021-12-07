@@ -63,10 +63,15 @@
   .Navbar_searchDivMain {
     margin: 3rem 0px;
   }
-  .Navbar_searchDiv {
+  /* .Navbar_searchDiv {
     width: 100%;
-  }
+  } */
   .navbar-light .navbar-toggler:focus {
     outline: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Navbar_searchDiv {
+    width: 100%;
   }
 }
