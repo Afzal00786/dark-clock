@@ -87,6 +87,7 @@
   color: #dc3f10;
   font-size: 21px;
   margin-bottom: 1.2rem;
+  font-weight: bold;
 }
 .Roco_mainDiv {
   display: flex;
@@ -124,7 +125,7 @@
 .stakes_button {
   width: 201px;
   height: 62px;
-  background: #cd2a12;
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
   color: #dfdede;
   font-size: 15px;
   font-weight: 600;
@@ -146,7 +147,9 @@
   text-align: center;
   margin-top: 2rem;
 }
-
+.link_stake:hover {
+  text-decoration: none;
+}
 /* unstake */
 .unstake_div {
   display: flex;
@@ -155,7 +158,7 @@
 .unstakes_button {
   width: 201px;
   height: 62px;
-  background: #cd2a12;
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
   color: #dfdede;
   font-size: 15px;
   font-weight: 600;

@@ -66,8 +66,8 @@ function Stake1() {
 
                             <div className="Roco_mainDiv">
                                 <div className="roco_marginDiv">
-                                    <h4 className="roco_text"><span className="orange_roco">ROCOE</span> ARNED</h4>
-                                    <h4 className="roco_text">O</h4>
+                                    <h4 className="roco_text"><span className="orange_roco">ROCO</span> EARNED</h4>
+                                    <h4 className="roco_text">0</h4>
                                 </div>
                                 <div className="claim_Div">
                                     <button className="claim_button">Claim</button>
@@ -115,8 +115,8 @@ function Stake1() {
 
                             <div className="Roco_mainDiv">
                                 <div className="roco_marginDiv">
-                                    <h4 className="roco_text"><span className="orange_roco">ROCOE</span> ARNED</h4>
-                                    <h4 className="roco_text">O</h4>
+                                    <h4 className="roco_text"><span className="orange_roco">ROCO</span> EARNED</h4>
+                                    <h4 className="roco_text">0</h4>
                                 </div>
                                 <div className="claim_Div">
                                     <button className="claim_button">Claim</button>
@@ -210,7 +210,7 @@ function MyVerticallyCenteredModal(props) {
                 <div className="Roco_mainDivModal">
                     <div className="roco_marginDiv">
                         <h4 className="roco_text"><span className="orange_roco">STAKE</span> ROCO</h4>
-                        <h4 className="roco_text">O</h4>
+                        <h4 className="roco_text">0</h4>
                     </div>
                     <div className="claim_Div">
                         <button className="claim_button">Max</button>
@@ -272,7 +272,7 @@ function MyVerticallyCenteredModal1(props) {
                 <div className="Roco_mainDivModal">
                     <div className="roco_marginDiv">
                         <h4 className="roco_text"><span className="orange_roco">UNSTAKE</span> ROCO</h4>
-                        <h4 className="roco_text">O</h4>
+                        <h4 className="roco_text">0</h4>
                     </div>
                     <div className="claim_Div">
                         <button className="claim_button">Max</button>

@@ -3,6 +3,7 @@ import Navbars from "../Navbar/Navbars"
 import Footer from "../Footer/Footer"
 import arrow_b from "../../Assets/arrow_b.png"
 import lamp from "../../Assets/lamp.png"
+import { Link } from "react-router-dom"
 import "./Stake.css"
 function Stake() {
     return (
@@ -56,8 +57,8 @@ function Stake() {
 
                         <div className="Roco_mainDiv">
                             <div className="roco_marginDiv">
-                                <h4 className="roco_text"><span className="orange_roco">ROCOE</span> ARNED</h4>
-                                <h4 className="roco_text">O</h4>
+                                <h4 className="roco_text"><span className="orange_roco">ROCO</span> EARNED</h4>
+                                <h4 className="roco_text">0</h4>
                             </div>
                             <div className="claim_Div">
                                 <button className="claim_button">Claim</button>
@@ -66,7 +67,10 @@ function Stake() {
 
 
                         <div className="contract_mainDiv">
-                            <button className="stakes_button">Stake</button>
+                            <Link className="link_stake"
+                                to="/stake1">
+                                <button className="stakes_button">Stake</button>
+                            </Link>
 
 
                             <p className="view_contract">View Contract</p>
@@ -103,8 +107,8 @@ function Stake() {
 
                         <div className="Roco_mainDiv">
                             <div className="roco_marginDiv">
-                                <h4 className="roco_text"><span className="orange_roco">ROCOE</span> ARNED</h4>
-                                <h4 className="roco_text">O</h4>
+                                <h4 className="roco_text"><span className="orange_roco">ROCO</span> EARNED</h4>
+                                <h4 className="roco_text">0</h4>
                             </div>
                             <div className="claim_Div">
                                 <button className="claim_button">Claim</button>
@@ -113,7 +117,9 @@ function Stake() {
 
 
                         <div className="contract_mainDiv">
-                            <button className="stakes_button">Stake</button>
+                            <Link className="link_stake" to="/stake1">
+                                <button className="stakes_button">Stake</button>
+                            </Link>
 
 
                             <p className="view_contract">View Contract</p>
