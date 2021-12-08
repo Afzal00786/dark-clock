@@ -86,10 +86,15 @@
   font-size: 15px;
   font-weight: 600;
 }
+.apply_button:hover {
+  background: #cd2a12;
+}
 .apply_button:focus {
   outline: none;
 }
-
+.member_link:hover {
+  text-decoration: none;
+}
 @media screen and (max-width: 1070px) {
   .member_mainDiv {
     width: 100%;
@@ -110,6 +115,21 @@
   .first_boxText {
     font-size: 20px;
   }
+  .first_boxMember {
+    height: 115px;
+  }
+  .member_innerMargin {
+    align-items: center;
+  }
+  .checkBox_orangeDiv {
+    margin-bottom: 0px;
+  }
+  .textBox_mainDiv {
+    margin-top: 35px;
+  }
+  .first_boxText {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -117,6 +137,18 @@
     font-size: 16px;
   }
   .first_boxP {
+    font-size: 13px;
+  }
+  .textBox_mainDiv {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .textBox_mainDiv {
+    margin-top: 17px;
+  }
+  .first_boxText {
     font-size: 13px;
   }
 }

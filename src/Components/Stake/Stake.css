@@ -136,6 +136,9 @@
   justify-content: center;
   align-items: center;
 }
+.stakes_button:hover {
+  background: #cd2a12;
+}
 .stakes_button:focus {
   outline: 0px;
 }
@@ -167,6 +170,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.unstakes_button:hover {
+  background: #cd2a12;
 }
 .unstakes_button:focus {
   outline: 0px;
@@ -250,13 +256,20 @@
 @media screen and (max-width: 500px) {
   .cardOne_stake {
     width: 340px;
+    height: auto;
   }
   .stake_divTwo {
     width: 335px;
   }
   .top_divCard {
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
+  }
+  .stake_priceDiv {
+    margin-top: 2rem;
+  }
+  .Roco_mainDiv {
+    margin-top: 1.5rem;
   }
   .lamp_text,
   .aprStake,
@@ -275,7 +288,7 @@
     flex-direction: column;
   }
   .contract_mainDiv {
-    margin-top: 4rem;
+    margin-top: 2rem !important;
     display: flex;
     flex-direction: column;
     margin: auto;

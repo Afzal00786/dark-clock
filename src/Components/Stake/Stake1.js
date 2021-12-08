@@ -5,12 +5,14 @@ import arrow_b from "../../Assets/arrow_b.png"
 import cross from "../../Assets/cross.png"
 import lamp from "../../Assets/lamp.png"
 import { Modal, Button } from "react-bootstrap"
+import { useNavigate } from "react-router-dom"
+
 import "./Stake.css"
 
 
 
 function Stake1() {
-
+    const history = useNavigate()
     const [modalShow, setModalShow] = React.useState(false);
     const [modalShow1, setModalShow1] = React.useState(false);
 
@@ -24,7 +26,9 @@ function Stake1() {
 
                     <div className="stake_divOne">
                         <div className="stake_divTwo">
-                            <div className="stake_divArrow">
+                            <div className="stake_divArrow" onClick={() => {
+                                history(-1)
+                            }}>
                                 <img src={arrow_b} />
                             </div>
                             <div className="stake_divStake">

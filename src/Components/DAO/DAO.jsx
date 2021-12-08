@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, ProgressBar } from "react-bootstrap";
 import "./DAO.css";
 import Navbars from "../Navbar/Navbars";
 import arrow from "../../Assets/back_arrow.png";
 import QueMark from "../../Assets/Path 20697.png";
-
+import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom"
 const DAO = () => {
+  const history = useNavigate()
   return (
     <>
       <Navbars />
-      <Container>
+      <Container className="dao_mainContainer">
         <div className="dao-section">
           <div className="nav-row">
-            <div>
+            <div className="arrow_bgDiv" onClick={() => {
+              history(-1)
+            }}>
               <img src={arrow}></img>
             </div>
             <div>
@@ -41,13 +45,17 @@ const DAO = () => {
             </div>
             <ProgressBar className="pro_bar" now={60} label={`60%`} />
             <div className="bottom_button">
-            <button type="button" className="yes_button">yes</button>
+              <button type="button" className="yes_button">Yes</button>
             </div>
           </div>
         </div>
-        
-        
+
+
       </Container>
+
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

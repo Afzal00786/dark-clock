@@ -11,7 +11,7 @@ function Navbars() {
         <>
             <div className="Navbar_main_Div">
                 <div className="container-fluid Navbar_innerDiv">
-                    <Navbar collapseOnSelect expand="lg" className="Navbar_padding">
+                    {/* <Navbar collapseOnSelect expand="lg" className="Navbar_padding">
 
                         <Navbar.Brand href="#home">
                             <img className="Navbar_logo" src={logo} />
@@ -52,7 +52,44 @@ function Navbars() {
 
                         </Navbar.Collapse>
 
-                    </Navbar>
+                    </Navbar> */}
+
+                    <div className="main_navbarDiv Navbar_padding">
+                        <div>
+                            <img className="Navbar_logo" src={logo} />
+                        </div>
+                        <div className="search_divWallets">
+
+                            <div className="Navbar_searchDivMain">
+                                <div className="Navbar_searchDiv">
+                                    <img className="search_navbarImg" src={seacrh} />
+                                    <input className="search_navbarInput" placeholder="Search" />
+
+                                </div>
+                            </div>
+                            <div>
+                                {toggle ? <button className="Navbar_walletButton" onClick={() => { setToggle(!toggle) }}>Connect Wallet</button> :
+                                    <div className="number_div crs" onClick={() => { setToggle(!toggle) }}>
+                                        <h5 className="number_text">0x05698531.......60014536b</h5>
+                                        <div className="boxes_mainDiv">
+                                            <div className="">
+                                                <div className="member_innerMarginNumber">
+                                                    <button className="checkBox_orangeDiv">
+
+                                                        <img src={checkred} />
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

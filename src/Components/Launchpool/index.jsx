@@ -20,7 +20,7 @@ const Launchpool = () => {
                         <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
                             history(-1)
                         }}>   <img src={Arrow} /></div>
-                        <div className="membership">Launchpool</div>
+                        <div className="launch_pool">Launchpool</div>
                     </div>
                     <div className="launchpool_card_wrapper">
                         <div className="lauchpool_card">
@@ -55,7 +55,7 @@ const Launchpool = () => {
 
                                 </div>
                                 <div className="d-flex justify-content-center mt-3">
-                                    <button className="btn lounchpool_card_btn">Join Seed Sale</button>
+                                    <button className=" lounchpool_card_btn">Join Seed Sale</button>
                                 </div>
                             </div>
 

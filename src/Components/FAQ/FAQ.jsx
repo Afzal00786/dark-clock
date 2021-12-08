@@ -5,8 +5,10 @@ import Navbars from "../Navbar/Navbars";
 import arrow from "../../Assets/back_arrow.png";
 import QueMark from "../../Assets/Path 20697.png";
 import layerArrow from "../../Assets/Layer13.png";
-
+import { useNavigate } from "react-router-dom"
+import Footer from '../Footer/Footer'
 const FAQ = () => {
+  const history = useNavigate()
   const [imgId, setImgId] = useState(null);
 
   const rotate = (id) => {
@@ -16,10 +18,12 @@ const FAQ = () => {
   return (
     <>
       <Navbars />
-      <Container>
+      <Container className="dao_mainContainer">
         <div className="faq-section">
           <div className="nav-row">
-            <div>
+            <div className="faq_bgImg" onClick={() => {
+              history(-1)
+            }}>
               <img src={arrow}></img>
             </div>
             <div>
@@ -79,9 +83,9 @@ const FAQ = () => {
                     </div>
                     <div className="layer_arrow">
                       <img
-                      style={{
-                        transform: imgId == 2 ? "rotate(180deg)" : null,
-                      }}
+                        style={{
+                          transform: imgId == 2 ? "rotate(180deg)" : null,
+                        }}
                         className="arrowimg"
                         src={layerArrow}
                         alt="arrow"
@@ -103,6 +107,10 @@ const FAQ = () => {
           </Accordion>
         </div>
       </Container>
+
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

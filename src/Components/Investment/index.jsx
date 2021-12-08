@@ -76,7 +76,7 @@ const Investment = () => {
                         <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
                             history(-1)
                         }} >   <img src={Arrow} /></div>
-                        <div className="membership">Membership</div>
+                        <div className="membership">Investments</div>
                     </div>
                     <div className="investment_card_wrapper">
                         {

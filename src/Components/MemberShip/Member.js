@@ -4,7 +4,10 @@ import Navbars from '../Navbar/Navbars'
 import arrow_b from "../../Assets/arrow_b.png"
 import checkred from "../../Assets/checkred.png"
 import checkgrey from "../../Assets/checkgrey.png"
-import { useNavigate } from "react-router-dom"
+// import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
+
 
 import "./Member.css"
 function Member() {
@@ -36,9 +39,9 @@ function Member() {
 
                                     <img src={select ? checkred : checkgrey} />
                                 </button>
-                                <div>
+                                <div className="textBox_mainDiv">
                                     <h3 className="first_boxText">For Pariticipating Hoopoe Family please hold at least 1 Hoopoe Token.</h3>
-                                    <p className="first_boxP">Buy Hoopoe Token</p>
+                                    <Link className="member_link" to=""><p className="first_boxP">Buy Hoopoe Token</p></Link>
                                 </div>
                             </div>
 
@@ -51,9 +54,9 @@ function Member() {
 
                                     <img src={select1 ? checkred : checkgrey} />
                                 </button>
-                                <div>
+                                <div className="textBox_mainDiv">
                                     <h3 className="first_boxText">Once you have 1 Hoop token verify your wallet by signing the contract.</h3>
-                                    <p className="first_boxP">Verify your wallet</p>
+                                    <Link className="member_link" to=""><p className="first_boxP">Verify your wallet</p></Link>
                                 </div>
 
 
@@ -66,9 +69,9 @@ function Member() {
 
                                     <img src={select2 ? checkgrey : checkred} />
                                 </button>
-                                <div>
+                                <div className="textBox_mainDiv">
                                     <h3 className="first_boxText">After verifying the contracts you will be directed to our private Telegram group.</h3>
-                                    <p className="first_boxP">Send direct message to our Admins</p>
+                                    <Link className="member_link" to=""><p className="first_boxP">Send direct message to our Admins</p></Link>
                                 </div>
                             </div>
 

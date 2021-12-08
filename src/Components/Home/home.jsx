@@ -46,7 +46,7 @@ const Home = () => {
             text: "DAO",
             subText: "Vote for future",
             img: Vote,
-            route: "membership"
+            route: "/dao"
 
         },
         {
@@ -77,7 +77,7 @@ const Home = () => {
             text: "FAQ",
             subText: "Fraequently asked questions",
             img: FAQ,
-            route: "membership"
+            route: "/faq"
 
         },
 
@@ -88,10 +88,10 @@ const Home = () => {
     return (
         <>
             <Navbars />
-            <div style={{ backgroundColor: "#26282b" }}>
+            <div>
                 <div className="container_wrapper">
                     {/* <=======Banner Carousel==========> */}
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -99,14 +99,15 @@ const Home = () => {
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src={Carousel} alt="First slide" />
+                                <img class="d-block w-100 first_sliders" src={Carousel} alt="First slide" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src={Carousel} alt="Second slide" />
+                                <img class="d-block w-100 first_sliders" src={Carousel} alt="Second slide" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src={Carousel} alt="Third slide" />
+                                <img class="d-block w-100 first_sliders" src={Carousel} alt="Third slide" />
                             </div>
+
                         </div>
                         {/* <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,11 +124,11 @@ const Home = () => {
                                 return (
                                     <>
                                         <Link className="link_home" to={cardData.route}>
-                                            <div className={color === cardData.id ? "d-flex justify-content-center align-items-center home_tab_wrapper bg_chage" : "d-flex justify-content-center align-items-center home_tab_wrapper "} onClick={() => {
+                                            <div className={color === cardData.id ? "d-flex align-items-center home_tab_wrapper bg_chage" : "d-flex align-items-center home_tab_wrapper "} onClick={() => {
                                                 setColor(cardData.id)
                                             }}>
                                                 <div><img src={cardData.img} className="home_card_img" /></div>
-                                                <div className="ml-4" style={{ background: "transparent" }}><div className="card_text">{cardData.text}</div>
+                                                <div className="margin_topDiv"><div className="card_text">{cardData.text}</div>
                                                     <div className="card_subtext">{cardData.subText}</div>
                                                 </div>
                                             </div>

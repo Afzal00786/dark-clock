@@ -4,7 +4,7 @@
 }
 .Navbar_innerDiv {
   padding-top: 20px;
-  max-width: 90%;
+  max-width: 91%;
   margin: auto;
 }
 .Navbar_padding {
@@ -52,6 +52,9 @@
   border: 0px;
   border-radius: 4px;
 }
+.Navbar_walletButton:hover {
+  background: #cd2a12;
+}
 .Navbar_walletButton:focus {
   outline: 0px;
 }
@@ -75,12 +78,41 @@
 .crs {
   cursor: pointer;
 }
+
+.main_navbarDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.search_divWallets {
+  display: flex;
+  align-items: center;
+}
 @media screen and (max-width: 991px) {
-  .Navbar_searchDivMain {
+  /* .Navbar_searchDivMain {
     margin: 3rem 0px;
-  }
+  } */
   .navbar-light .navbar-toggler:focus {
     outline: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Navbar_searchDivMain {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Navbar_logo {
+    height: 60px;
+    width: 60px;
+  }
+  .main_navbarDiv {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Navbar_walletButton {
+    width: 160px;
+    height: 55px;
   }
 }
 @media screen and (max-width: 450px) {
