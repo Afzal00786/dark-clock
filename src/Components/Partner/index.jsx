@@ -90,7 +90,7 @@ const Partner = () => {
                             subcard.map((subcard) => {
                                 return (
                                     <>
-                                        <div className="investment_sub_card d-flex align-items-center shadow">
+                                        <div className="investment_sub_card d-flex align-items-center">
                                             <div className="ml-3 card_img shadow-lg d-flex justify-content-center align-items-center">
                                                 <img src={subcard.img} />
                                             </div>

@@ -89,7 +89,7 @@ const Investment = () => {
                         {
                             investmentCardData.map((cardData) => {
                                 return (
-                                    <div className={color === cardData.id ? "d-flex justify-content-center align-items-center investment_top_card shadow bg_change" : "d-flex justify-content-center align-items-center investment_top_card shadow"} onClick={() =>
+                                    <div className={color === cardData.id ? "d-flex justify-content-center align-items-center investment_top_card bg_change" : "d-flex justify-content-center align-items-center investment_top_card"} onClick={() =>
                                         setColor(cardData.id)
                                     }>
                                         <div>
@@ -115,7 +115,7 @@ const Investment = () => {
                             subcard.map((subcard) => {
                                 return (
                                     <>
-                                        <div className="investment_sub_card d-flex align-items-center shadow">
+                                        <div className="investment_sub_card d-flex align-items-center">
                                             <div className="ml-3 investment_card_img d-flex justify-content-center align-items-center">
                                                 <img src={subcard.img} />
                                             </div>

@@ -12,7 +12,7 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
-  box-shadow: -2px -2px 6px #2f3136;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@
   border-radius: 10px;
   background: #26282b;
   border: #707070;
-  box-shadow: -2px -2px 6px #2f3136;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
 }
 .row-icon2 {
   display: flex;
@@ -82,7 +82,7 @@
   margin-top: 20px;
   border: #707070;
   border-radius: 10px;
-  box-shadow: -2px -2px 6px #2f3136;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
   padding: 2rem;
   color: #d84e0c;
 }

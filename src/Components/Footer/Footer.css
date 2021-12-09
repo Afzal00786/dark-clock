@@ -21,7 +21,7 @@
   width: 48px;
   height: 48px;
   background: #26282b;
-  box-shadow: 3px 3px 6px #1b1c1d;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
   border-radius: 4px;
   display: flex;
   align-items: center;

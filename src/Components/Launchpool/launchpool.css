@@ -31,7 +31,7 @@
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
-  box-shadow: -2px -2px 6px #2f3136;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
   padding: 50px 0px 0px 20px;
 }
 .luanchpool_img_section {
@@ -49,7 +49,7 @@
 
   background-color: #2f3136;
   border-radius: 6px;
-  box-shadow: 3px 3px 6px #1b1c1d;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
 }
 .launchpool_card_heading {
   font-size: 26px;
