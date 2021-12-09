@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Accordion } from "react-bootstrap";
 import "./faq.css";
 import Navbars from "../Navbar/Navbars";
@@ -15,6 +15,10 @@ const FAQ = () => {
     setImgId(imgId == id ? null : id);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [])
+
   return (
     <>
       <Navbars />
@@ -27,7 +31,7 @@ const FAQ = () => {
               <img src={arrow}></img>
             </div>
             <div>
-              <h4 className="text">FAQ</h4>
+              <h4 className="text1">FAQ</h4>
             </div>
           </div>
           <Accordion defaultActiveKey="0"  >
@@ -41,7 +45,7 @@ const FAQ = () => {
                       </div>
                       <div className="text_client">
                         <h4 className="text">
-                          Would you like to invest Roco Seed sale?{" "}
+                          Please keep in mind that some issues cannot be addressed without a client-side p
                         </h4>
                       </div>
                     </div>
@@ -58,13 +62,7 @@ const FAQ = () => {
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Please keep in mind that some issues cannot be addressed without a client-side p
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2" onClick={() => rotate(2)}>
@@ -77,7 +75,7 @@ const FAQ = () => {
                       </div>
                       <div className="text_client">
                         <h4 className="text">
-                          Would you like to invest Roco Seed sale?{" "}
+                          Please keep in mind that some issues cannot be addressed without a client-side p
                         </h4>
                       </div>
                     </div>
@@ -95,13 +93,7 @@ const FAQ = () => {
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Please keep in mind that some issues cannot be addressed without a client-side p
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

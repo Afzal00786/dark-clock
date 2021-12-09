@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../UserDashoard/userdashoard1.css"
 import Fire from "../../Images/fire.png"
 import Arrow from "../../Images/back_arrow.png"
 import Navbars from '../Navbar/Navbars'
 import Footer from '../Footer/Footer'
+import { useNavigate } from 'react-router'
 
 
 const UserDashoard2 = () => {
+    const history = useNavigate()
     const Userdashboard = [
         {
             id: 1,
@@ -38,14 +40,19 @@ const UserDashoard2 = () => {
 
         },
     ]
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
         <div>
 
             <Navbars />
             <div className="container_wrapper">
                 <div className="content_wrapper">
-                    <div className="d-flex justify-content-between">
-                        <div className="back_arrow d-flex justify-content-center align-items-center">   <img src={Arrow} /></div>
+                    <div className="d-flex justify-content-between arrow_section2">
+                        <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
+                            history(-1)
+                        }}>   <img src={Arrow} /></div>
                         <div className="membership">User Dashboard2</div>
                     </div>
 
@@ -70,7 +77,7 @@ const UserDashoard2 = () => {
                                                 }  <span className="inner_text">{dashboarddata.spantext}</span>
                                             </div>
                                             <div className="dashboard_card_btn">
-                                                <button disabled={dashboarddata.disable} className="btn dashboard-btn">Claim</button>
+                                                <button disabled={dashboarddata.disable} className="dashboard-btn">Claim</button>
                                             </div>
                                         </div>
 

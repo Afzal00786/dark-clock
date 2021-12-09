@@ -27,6 +27,9 @@
   align-items: center;
   user-select: none;
 }
+.stake_divArrow:hover {
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
+}
 .stake_textStake {
   font-size: 18px;
   color: #d9d9d9;

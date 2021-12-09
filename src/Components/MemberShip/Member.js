@@ -1,4 +1,4 @@
-import React, { useState, useHistory } from 'react'
+import React, { useState, useHistory, useEffect } from 'react'
 import Footer from '../Footer/Footer'
 import Navbars from '../Navbar/Navbars'
 import arrow_b from "../../Assets/arrow_b.png"
@@ -15,6 +15,9 @@ function Member() {
     const [select, setSelect] = useState(true)
     const [select1, setSelect1] = useState(true)
     const [select2, setSelect2] = useState(true)
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
 
         <>

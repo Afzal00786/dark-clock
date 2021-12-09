@@ -20,7 +20,6 @@
 .carousel-indicators li.active {
   background-color: #cd2a12;
 }
-
 .home_page_card {
   display: flex;
   flex-wrap: wrap;
@@ -35,12 +34,12 @@
 .home_tab_wrapper {
   width: 377px;
   height: 147px;
-  background-color: #26282b;
-  border-radius: 10px;
-  margin: 35px 15px 20px;
+  /* border-radius: 10px; */
+  margin: 35px 13px 20px;
   cursor: pointer;
-
-  box-shadow: -2px -2px 6px #2f3136;
+  border-radius: 8px;
+  background: #26282b;
+  box-shadow: 5px 5px 4px #202225, -5px -5px 4px #2c2e31;
 }
 .home_tab_wrapper:hover {
   background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "../Investment/investment.css"
 import cardImg from "../../Images/fire.png"
 import Send from "../../Images/send.png"
@@ -8,6 +8,8 @@ import Navbars from '../Navbar/Navbars'
 import Footer from '../Footer/Footer'
 
 const Investment = () => {
+
+
     const [color, setColor] = useState("1")
     const history = useNavigate()
     const subcard = [
@@ -66,13 +68,18 @@ const Investment = () => {
             cardtext: "Incubated  Projects"
         },
     ]
+
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
         < >
 
             <Navbars />
             <div className="container_wrapper">
                 <div className="content_wrapper">
-                    <div className="d-flex justify-content-between arrow_section">
+                    <div className="d-flex justify-content-between arrow_section5">
                         <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
                             history(-1)
                         }} >   <img src={Arrow} /></div>

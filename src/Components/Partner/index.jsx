@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "../Partner/partner.css"
 import cardImg from "../../Images/fire.png"
 import Send from "../../Images/send.png"
@@ -68,6 +68,9 @@ const Partner = () => {
         },
 
     ]
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
 
     return (
         < >

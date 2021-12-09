@@ -18,12 +18,22 @@
   justify-content: center;
   align-items: center;
 }
+.faq_bgImg:hover {
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
+}
 .nav-row {
   display: flex;
   justify-content: space-between;
 }
+.text1 {
+  color: #d9d9d9;
+  font-size: 18px;
+  font-weight: 600;
+}
 .text {
   color: #d9d9d9;
+  text-align: start;
+  font-weight: 600;
 }
 .faq_div {
   border-radius: 10px;
@@ -37,6 +47,7 @@
   align-items: center;
   padding-bottom: 20px;
   margin-right: 50px;
+  height: 194px;
 }
 .que_icon2 {
   display: flex;
@@ -58,11 +69,11 @@
   color: #d9d9d9;
 }
 .accordion-button {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  /* margin-top: 30px;
+  margin-bottom: 50px; */
   border: none;
   outline: none !important;
-  height: 30px;
+  /* height: 30px; */
   width: 100%;
   background-repeat: no-repeat;
   background-color: transparent !important;
@@ -74,4 +85,46 @@
   box-shadow: -2px -2px 6px #2f3136;
   padding: 2rem;
   color: #d84e0c;
+}
+
+@media screen and (max-width: 767px) {
+  .row-icon2 {
+    min-height: max-content;
+    margin-right: 1.5rem;
+    height: 150px;
+  }
+  .que_icon2 {
+    margin-left: 1rem;
+  }
+  .text,
+  .accordion-body {
+    font-size: 16px;
+  }
+  .row-icon2 {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text,
+  .accordion-body {
+    font-size: 13px;
+  }
+  .text_client {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .text,
+  .accordion-body {
+    font-size: 12px;
+  }
+  .text_client {
+    margin-left: 5px;
+  }
+  .row-icon2,
+  .que_icon2 {
+    margin-right: 0.8rem;
+  }
 }

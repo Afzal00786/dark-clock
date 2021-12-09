@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Fire from "../../Images/fire.png"
 import "../Launchpool/launchpool.css"
 import imgSec from "../../Images/imgSec.png"
@@ -10,13 +10,16 @@ import Footer from '../Footer/Footer'
 
 const Launchpool = () => {
     const history = useNavigate()
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
         <>
             <Navbars />
 
             <div className="container_wrapper">
                 <div className="content_wrapper">
-                    <div className="d-flex justify-content-between arrow_section" >
+                    <div className="d-flex justify-content-between arrow_section4" >
                         <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
                             history(-1)
                         }}>   <img src={Arrow} /></div>

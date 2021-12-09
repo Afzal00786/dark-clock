@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../UserDashoard/userdashoard1.css"
 import Fire from "../../Images/fire.png"
 import Arrow from "../../Images/back_arrow.png"
@@ -36,6 +36,9 @@ const UserDashoard1 = () => {
             img: Fire
         },
     ]
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
 
         <div>
@@ -44,7 +47,7 @@ const UserDashoard1 = () => {
 
             <div className="container_wrapper">
                 <div className="content_wrapper">
-                    <div className="d-flex justify-content-between arrow_section">
+                    <div className="d-flex justify-content-between arrow_section2">
                         <div className="back_arrow d-flex justify-content-center align-items-center" onClick={() => {
                             history(-1)
                         }}>   <img src={Arrow} /></div>
@@ -72,7 +75,7 @@ const UserDashoard1 = () => {
                                                 }  <span className="inner_text">{dashboarddata.spantext}</span>
                                             </div>
                                             <div className="dashboard_card_btn">
-                                                <button className="btn dashboard-btn">Claim</button>
+                                                <button className="dashboard-btn">Claim</button>
                                             </div>
                                         </div>
 

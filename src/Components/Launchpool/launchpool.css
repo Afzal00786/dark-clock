@@ -8,8 +8,9 @@
   max-width: 90%;
   margin: auto;
 }
-.arrow_section {
+.arrow_section4 {
   margin-top: 3rem;
+  padding: 0px 14px;
 }
 .launchpool_card_wrapper {
   display: flex;
@@ -20,7 +21,9 @@
   max-width: 1300px;
   margin: auto;
 }
-
+.back_arrow:hover {
+  background: linear-gradient(180deg, #cd2a12 0%, #ed560d 25%);
+}
 .lauchpool_card {
   width: 389px;
   height: 496px;
@@ -89,7 +92,7 @@
   color: #a8a8a8;
 }
 .lauchpool_btn_wrapper {
-  padding: 20px 0px 0px 0px;
+  margin-top: 20px;
 }
 .launchpool_btn_text {
   color: #a8a8a8;
@@ -127,9 +130,29 @@
   font-family: "open sans";
   color: white;
 }
+.click:hover {
+  color: white;
+}
+@media screen and (min-width: 1420px) {
+  .arrow_section4 {
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (min-width: 1370px) and (max-width: 1419px) {
+  .arrow_section4 {
+    padding: 0px 21px;
+  }
+}
 @media screen and (max-width: 1311px) {
   .launchpool_card_wrapper {
     justify-content: center;
+  }
+  .arrow_section4 {
+    width: 390px;
+    margin: auto;
+    padding: 0px !important;
+    margin-top: 3rem;
   }
 }
 
@@ -142,6 +165,12 @@
 }
 
 @media screen and (max-width: 475px) {
+  .arrow_section4 {
+    width: 100%;
+    margin: auto;
+    padding: 0px !important;
+    margin-top: 3rem;
+  }
   .name {
     font-size: 17px;
     font-family: "open sans";

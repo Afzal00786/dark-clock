@@ -119,4 +119,14 @@
   .Navbar_searchDiv {
     width: 100%;
   }
+  .checkBox_orangeDiv {
+    margin-right: 0px;
+  }
+  .number_text {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  /* .boxes_mainDiv {
+    margin: 0px !important;
+  } */
 }

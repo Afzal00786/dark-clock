@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbars from "../Navbar/Navbars"
 import Footer from "../Footer/Footer"
 import arrow_b from "../../Assets/arrow_b.png"
@@ -15,6 +15,9 @@ function Stake1() {
     const history = useNavigate()
     const [modalShow, setModalShow] = React.useState(false);
     const [modalShow1, setModalShow1] = React.useState(false);
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
 
     return (
         <>

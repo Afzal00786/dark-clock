@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbars from "../Navbar/Navbars"
 import Footer from "../Footer/Footer"
 import arrow_b from "../../Assets/arrow_b.png"
@@ -8,6 +8,9 @@ import "./Stake.css"
 import { useNavigate } from 'react-router'
 function Stake() {
     const history = useNavigate()
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
     return (
         <>
             <Navbars />

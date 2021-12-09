@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, ProgressBar } from "react-bootstrap";
 import "./DAO.css";
 import Navbars from "../Navbar/Navbars";
@@ -8,6 +8,9 @@ import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom"
 const DAO = () => {
   const history = useNavigate()
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [])
   return (
     <>
       <Navbars />

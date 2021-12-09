@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Carousel from "../../Images/carousel1.png"
 import "./home.css"
 import MemberShipg from "../../Images/member.png"
@@ -82,8 +82,9 @@ const Home = () => {
         },
 
     ]
-
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
 
     return (
         <>
@@ -91,7 +92,7 @@ const Home = () => {
             <div>
                 <div className="container_wrapper">
                     {/* <=======Banner Carousel==========> */}
-                    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
